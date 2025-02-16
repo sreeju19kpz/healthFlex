@@ -6,7 +6,7 @@ import { BaseButton } from "react-native-gesture-handler";
 import { alignment, gap, padding } from "../../lib/commonStyles";
 import Feather from "@expo/vector-icons/Feather";
 import { useThemeColor } from "../../hooks/useThemeColor";
-import { RadioBasic } from "../atomic/Radio";
+import { Radio, RadioBasic } from "../atomic/Radio";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store/store";
 import {
@@ -30,15 +30,19 @@ const ThemeSelector = () => {
     };
 
     return (
-      <BaseButton style={[padding.p_2]} onPress={onPress}>
+      <BaseButton
+        style={[padding.p_2, alignment.row, alignment.items_center, alignment.justify_between]}
+        onPress={onPress}
+      >
         <Text
           lightColor="foreground"
           darkColor="foreground"
           type="SemiBold"
-          style={{ fontSize: 16 }}
+          style={{ fontSize: 16, lineHeight: 18 }}
         >
           {item}
         </Text>
+        <RadioBasic id={item} selectedItem={theme} />
       </BaseButton>
     );
   };
