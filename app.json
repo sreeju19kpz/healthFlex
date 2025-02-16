@@ -15,7 +15,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sreekpz.healthFlex",
+      "permissions": ["android.permission.POST_NOTIFICATIONS"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -29,7 +31,21 @@
           "image": "./assets/splash-icon.png"
         }
       ],
-      "react-native-edge-to-edge"
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/OpenSans-ExtraBold.ttf",
+            "./assets/fonts/OpenSans-Bold.ttf",
+            "./assets/fonts/OpenSans-Light.ttf",
+            "./assets/fonts/OpenSans-Medium.ttf",
+            "./assets/fonts/OpenSans-Regular.ttf",
+            "./assets/fonts/OpenSans-SemiBold.ttf"
+          ]
+        }
+      ],
+      "react-native-edge-to-edge",
+      "expo-font"
     ]
   }
 }

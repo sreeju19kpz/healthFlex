@@ -1,0 +1,36 @@
+import { StyleSheet } from "react-native";
+
+export const gap = StyleSheet.create({
+  gap_x_1: { rowGap: 4 },
+  gap_x_2: { rowGap: 8 },
+  gap_x_3: { rowGap: 12 },
+  gap_x_4: { rowGap: 16 },
+  gap_x_5: { rowGap: 20 },
+  gap_x_6: { rowGap: 24 },
+  gap_x_7: { rowGap: 28 },
+  gap_x_8: { rowGap: 32 },
+  gap_x_9: { rowGap: 36 },
+  gap_x_10: { rowGap: 40 },
+
+  gap_y_1: { columnGap: 4 },
+  gap_y_2: { columnGap: 8 },
+  gap_y_3: { columnGap: 12 },
+  gap_y_4: { columnGap: 16 },
+  gap_y_5: { columnGap: 20 },
+  gap_y_6: { columnGap: 24 },
+  gap_y_7: { columnGap: 28 },
+  gap_y_8: { columnGap: 32 },
+  gap_y_9: { columnGap: 36 },
+  gap_y_10: { columnGap: 40 },
+
+  gap_1: { gap: 4 },
+  gap_2: { gap: 8 },
+  gap_3: { gap: 12 },
+  gap_4: { gap: 16 },
+  gap_5: { gap: 20 },
+  gap_6: { gap: 24 },
+  gap_7: { gap: 28 },
+  gap_8: { gap: 32 },
+  gap_9: { gap: 36 },
+  gap_10: { gap: 40 },
+});
